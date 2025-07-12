@@ -1,0 +1,234 @@
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e0d29;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 20px;
+}
+.name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.college img{
+  height: 3.5rem;
+  
+}
+.college{
+  padding-top: 0.8rem;
+}
+.society{
+  font-size: 3.5rem;
+  color: #00c2ff;
+}
+h1, h2 {
+  text-align: center;
+  color: #00c2ff;
+  margin-bottom: 20px;
+}
+
+.com{
+  font-size:2rem;
+}
+.des{
+  font-size: 1.3rem;
+  
+}
+
+.competion-name{
+  padding: 1rem;
+  font-size:3rem;
+  color:#00c2ff;
+  display: flex;
+  justify-content: center;
+}
+
+.register{
+  font-size:2rem;
+}
+
+/* Event Details */
+.event-details .event-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1c1b3a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.event-details p {
+  margin-bottom: 10px;
+}
+
+/* Schedule */
+.schedule ul {
+  list-style: none;
+  padding-left: 0;
+}
+.schedule li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+.schedule li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #00c2ff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.schedule span {
+  font-weight: 600;
+  color: #00c2ff;
+  display: inline-block;
+  width: 120px;
+}
+
+/* Speakers */
+.speakers .speaker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.speakers .card {
+  background-color: #1c1b3a;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  width: 200px;
+}
+.speakers img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.speakers i {
+  color: #00c2ff;
+  font-size: 1.2em;
+  margin-top: 8px;
+}
+
+/* Registration */
+.registration form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+}
+.registration input,
+.registration button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.registration input {
+  background-color: #ffffff;
+  color: #000;
+}
+.registration button {
+  background-color: #00c2ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.registration button:hover{
+  background-color: #008bb8;
+}
+
+.sche{
+  font-size: 2rem;
+}
+.mentors{
+  font-size: 2rem;
+}
+
+/* Venue */
+.venue {
+  text-align: center;
+  font-size: 2rem;
+}
+.venue img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Sponsors */
+.sponsors .sponsor-logos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.sponsor {
+  background-color: #ffffff;
+  height: 8rem;
+  color: #000;
+  padding: 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer p {
+  margin: 5px 0;
+}
+footer i {
+  margin-right: 10px;
+}
+.social-icons a {
+  color: #00c2ff;
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-details .event-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .des p{
+    display: none;
+  }
+  .competion-name{
+    font-size:2rem;
+  }
+  .society{
+    font-size:2.7rem;
+  }
+  .speakers .card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .registration form {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
